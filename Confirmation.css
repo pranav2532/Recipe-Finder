@@ -1,0 +1,93 @@
+/* Confirmation.css */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+}
+
+/* Background theme similar to Home Page */
+.confirmation-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #EFC88B;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Glassmorphic Confirmation Box */
+.confirmation-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Title Styling */
+.confirmation-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:#050517; /* Light Blue Accent */
+    text-shadow: 2px 2px 5px rgba(56, 189, 248, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Message Styling */
+.confirmation-message {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #cbd5e1; /* Light Grey */
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Button Styling (Matching Theme) */
+.confirmation-button {
+    padding: 14px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background: #0892A5;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 2.5s ease-in-out forwards, pulse 2s infinite;
+}
+
+/* Hover Effect */
+.confirmation-button:hover {
+    background-color: #06908F;
+    transform: scale(1.07);
+}

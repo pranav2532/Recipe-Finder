@@ -1,0 +1,90 @@
+/* Overall container */
+.restaurant_list {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #FAF8F6; /* Light warm background */
+    /* margin-top: 102em; */
+}
+
+/* Heading section */
+.restaurant_header {
+    margin-bottom: 30px;
+}
+
+.restaurant_header h2 {
+    font-size: 2rem;
+    color: #5A3E36; /* Deep earthy brown */
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.restaurant_header p {
+    font-size: 1rem;
+    color: #7C5E47; /* Warm brown */
+}
+
+/* Restaurant Grid */
+.restaurant_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Restaurant Card */
+.restaurant_card {
+    width: 320px;
+    background: #FDF8E1; /* Light pastel yellow */
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    border: 2px solid #D3B88C; /* Soft golden border */
+    transition: transform 0.3s ease-in-out;
+}
+
+.restaurant_card:hover {
+    transform: scale(1.05);
+}
+
+/* Restaurant Image */
+.restaurant_image img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    border-bottom: 3px solid #D3B88C;
+}
+
+/* Restaurant Info */
+.restaurant_info h3 {
+    color: #5A3E36; /* Deep earthy brown */
+    font-size: 1.6rem;
+    margin: 12px 0;
+    font-weight: 600;
+}
+
+.restaurant_info p {
+    font-size: 1rem;
+    color: #7C5E47; /* Warm brown */
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+/* Button Styling */
+.restaurant_info button {
+    background: #A67B5B; /* Rich earthy brown */
+    color: #FFF;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.restaurant_info button:hover {
+    background: #8B5E3C; /* Darker brown for contrast */
+    transform: scale(1.05);
+}

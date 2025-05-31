@@ -1,0 +1,33 @@
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer_links {
+    margin-bottom: 20px;
+}
+
+.footer_links a {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer_links a:hover {
+    color: #e57373;
+}
+
+.footer_contact p {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+.footer_contact {
+    margin-top: 20px;
+}

@@ -1,0 +1,121 @@
+/* Main container */
+.restaurant_details {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Image Gallery */
+.image_gallery img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Enlarged Image on Click */
+.image_gallery img:active {
+    transform: scale(1.3);
+    z-index: 10;
+    position: relative;
+}
+
+/* Restaurant Details */
+.details_section {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.details_section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.details_section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Menu Section */
+.menu_section {
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.menu_section h3 {
+    font-size: 22px;
+    color: #444;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.menu_image {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.menu_image:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Booking Section */
+.booking_section {
+    margin-top: 20px;
+}
+
+#book_btn {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #ff4d4d;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#book_btn:hover {
+    background: #cc0000;
+}
+
+/* Modal for Enlarged Menu Image */
+.menu_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.enlarged_menu_image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.enlarged_menu_image:hover {
+    transform: scale(1.05);
+}

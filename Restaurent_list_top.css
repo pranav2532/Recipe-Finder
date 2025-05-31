@@ -1,0 +1,79 @@
+/* Container for the restaurant list */
+.restaurant_list_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 2.5rem;
+    flex-wrap: wrap;
+    /* Allows cards to wrap if screen size is small */
+}
+
+/* Styling each restaurant card */
+.restaurant_card {
+    width: 30%;
+    /* Each card will take up 30% of the container width */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow for a card effect */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    /* Stack image, info, and button vertically */
+    padding: 1rem;
+}
+
+/* Image Styling */
+.restaurant_image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* Make the image cover the space without distortion */
+    border-radius: 10px;
+}
+
+/* Restaurant Info Styling */
+.restaurant_info {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.restaurant_info h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.restaurant_info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Styling the Book Now Button */
+#book_button {
+    padding: 10px 20px;
+    background-color: #ff5c5c;
+    /* Red background for booking */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#book_button:hover {
+    background-color: #ff3d3d;
+    /* Darker red on hover */
+}
+
+/* Hover effect on card */
+.restaurant_card:hover {
+    transform: translateY(-5px);
+    /* Slight hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* More pronounced shadow on hover */
+}

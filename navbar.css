@@ -1,0 +1,92 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Container */
+.nav_main_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Dark semi-transparent background */
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Main Heading */
+.nav_main_heading h3 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+/* Navbar Links */
+.nav_links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    margin-right: 3rem;
+}
+
+.nav_link_items a {
+    text-decoration: none;
+    color: #ffffff;
+    /* Light color for links */
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav_link_items a:hover {
+    color: #f39c12;
+    /* Warm gold accent */
+    transform: scale(1.1);
+}
+
+/* Navbar User Section */
+.nav_user {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav_user div {
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav_user div:hover {
+    background-color: #e74c3c;
+    /* Red hover effect to match the background */
+    border-radius: 5px;
+}
+
+/* Banner Image Styling */
+.nav_banner_div img{
+    width: 100%;
+    height: 32.2em;
+    display: block;
+    filter: brightness(70%);
+    /* Slightly darken the image */
+}
+
+/* Make sure the text on the image is readable */
+.nav_main_container,
+.nav_links,
+.nav_user {
+    position: relative;
+    z-index: 1;
+}

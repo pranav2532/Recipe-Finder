@@ -1,0 +1,56 @@
+/* Container for the Introduction section */
+.intro_main_div {
+    background-color: #f8f8f8;
+    /* Light background for better contrast with the navbar */
+    padding: 4rem 2rem;
+    /* Give some padding to make it look spacious */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    /* Adjust based on how much content you have */
+}
+
+/* Heading styling */
+.intro_heading h1 {
+    font-size: 3rem;
+    /* Large heading */
+    color: #e74c3c;
+    /* Red color to match the theme */
+    margin-bottom: 0.5rem;
+}
+
+/* Subheading styling */
+.intro_heading p {
+    font-size: 1.2rem;
+    color: #333;
+    /* Dark gray text for readability */
+    margin-bottom: 2rem;
+    /* Space between text and button */
+}
+
+/* Button styling */
+#cta_button {
+    padding: 1rem 2.5rem;
+    /* Button size */
+    font-size: 1.2rem;
+    color: white;
+    background-color: #e74c3c;
+    /* Red background */
+    border: none;
+    border-radius: 4px;
+    /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Smooth transitions */
+}
+
+/* Hover effect on the button */
+#cta_button:hover {
+    background-color: #c0392b;
+    /* Darker red */
+    transform: translateY(-5px);
+    /* Lift the button slightly */
+}

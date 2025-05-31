@@ -1,0 +1,90 @@
+.reservation_container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #FFF8F1;  /* Light peachy background */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h2 {
+    color: #D72323; /* Deep Red for titles */
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: 600;
+    color: #333333; /* Dark text for contrast */
+    text-align: left;
+}
+
+input, select {
+    padding: 12px;
+    margin-top: 5px;
+    background: #FFE4D6; /* Soft peach background */
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    border: 2px solid #D72323; /* Red border on focus */
+    background: #FFD6C0; /* Slightly darker peach */
+    outline: none;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background: #D72323; /* Vibrant red button */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #BA1B1B; /* Darker red on hover */
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reservation_heading {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #D72323; /* Your deep red theme */
+    margin-bottom: 10px;
+}
+
+.reservation_subtext {
+    font-size: 16px;
+    text-align: center;
+    color: #555; /* Soft contrast */
+    margin-bottom: 20px;
+}

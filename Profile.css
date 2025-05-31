@@ -1,0 +1,134 @@
+/* General Styles */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("https://source.unsplash.com/1600x900/?restaurant,dining") no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+/* Profile Card */
+.profile-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    backdrop-filter: blur(10px);
+}
+
+/* Profile Heading */
+.profile-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #ff4d4d;
+    padding-bottom: 5px;
+}
+
+/* Profile Details */
+.profile-details p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Edit Profile */
+.edit-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.edit-profile input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Bookings Section */
+.bookings-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+    margin-top: 25px;
+}
+
+/* Bookings Container */
+.bookings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Booking Card */
+.booking-card {
+    background: #ff6347;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+.booking-card:hover {
+    transform: scale(1.05);
+}
+
+.restaurant-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.booking-info {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* No Bookings Message */
+.no-bookings {
+    font-size: 18px;
+    color: #777;
+    margin-top: 15px;
+}
+
+/* Buttons */
+.edit-btn, .save-btn, .logout-btn {
+    background: #ff4d4d;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 15px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.edit-btn:hover, .save-btn:hover, .logout-btn:hover {
+    background: #cc0000;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
